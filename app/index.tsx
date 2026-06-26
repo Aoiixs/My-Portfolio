@@ -6,8 +6,8 @@ import Skills from "@/components/skills";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 
-import about from "../styles/about";
-import styles from "../styles/homeStyle";
+import about from "@/styles/about";
+import styles from "@/styles/homeStyle";
 
 export default function Home() {
   return (
