@@ -1,6 +1,7 @@
 {
   "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+ "scripts": {
+  "build:web": "expo export --platform web"
+}
+  
 }
