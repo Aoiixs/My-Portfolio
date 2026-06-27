@@ -6,9 +6,10 @@ export default StyleSheet.create({
     flexWrap: "wrap",
     padding: 20,
     
-    backgroundColor: "white",
-    justifyContent: "space-between",
-    flexDirection: "row"
+
+    justifyContent: "center",
+    flexDirection: "row",
+    gap: 40
     
   },
 
@@ -16,7 +17,7 @@ export default StyleSheet.create({
     fontSize: 35,
     color: "#4F46E5",
     fontWeight: "bold",
-    marginBottom: 20,
+    marginBottom: 15,
     textAlign: "center",
   
   },
@@ -112,8 +113,8 @@ export default StyleSheet.create({
   borderRadius: 10,
   width: 150,
   height: 40,
-  justifyContent: "flex-start",
   alignItems: "center",
+  marginLeft: 8,
 
   shadowColor: "#4F46E5",
   shadowOpacity: 1,

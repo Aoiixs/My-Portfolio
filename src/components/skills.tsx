@@ -1,10 +1,12 @@
 import { BackendIcons, FrontendIcons, HardwareIcons, ToolsIcons } from "@/components/Icons";
 import skills from "@/styles/skills";
 import { FontAwesome, FontAwesome5, MaterialCommunityIcons } from "@expo/vector-icons";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, Text, useWindowDimensions, View } from "react-native";
 
 
 export default function Skills() {
+    const {width} = useWindowDimensions();
+    const sectionWidth = width < 900? "100%" : "23%";
     return(
 
         <>
@@ -14,7 +16,13 @@ export default function Skills() {
         {/* FRONTEND */}
      
 
-        <View style={skills.section}>
+        <View style={[skills.section,
+            {
+              width: sectionWidth,
+
+                
+            },
+        ]}>
 
             <Pressable
             style={({ hovered}) => [
@@ -84,7 +92,13 @@ export default function Skills() {
         </View>
 
         {/* BACKEND */}
-        <View style={skills.section}>
+        <View style={[skills.section,
+            {
+                 width: sectionWidth,
+
+
+            },
+        ]}>
 
                <Pressable
                style={({hovered}) => [
@@ -145,7 +159,13 @@ export default function Skills() {
         </View>
 
         {/* TOOLS */}
-        <View style={skills.section}>
+        <View style={[skills.section,
+            {
+                      width: sectionWidth,
+
+
+            },
+        ]}>
 
             <Pressable
             style={({hovered}) => [
@@ -202,7 +222,13 @@ export default function Skills() {
         </View>
 
         {/* HARDWARE */}
-        <View style={skills.section}>
+        <View style={[skills.section,
+            {
+            width: sectionWidth,
+
+
+            },
+        ]}>
             <Pressable
             style={({hovered}) => [
                 skills.item,

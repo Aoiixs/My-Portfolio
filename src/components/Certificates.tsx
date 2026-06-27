@@ -1,8 +1,9 @@
 import certificates from "@/styles/certificates";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import { Image, Pressable, Text, View } from "react-native";
+import { Image, Pressable, Text, useWindowDimensions, View } from "react-native";
 export default function Certificates(){
+    const {width} = useWindowDimensions();
     return(
         <View style={certificates.header}>
             <Text style={certificates.header}>Certificates</Text>
@@ -11,7 +12,11 @@ export default function Certificates(){
             <View style={certificates.container}>
 
 
-                <View style={certificates.card}>
+                <View style={[certificates.card,
+                    {
+                        width: width < 700 ? "100%" : "31%",
+                    }
+                ]}>
   
                     <Text style={certificates.title}>2nd INNOVEX 2026: International Student Conference</Text>
                     <Pressable
@@ -37,7 +42,11 @@ export default function Certificates(){
 
 
 
-                <View style={certificates.card}>
+                <View style={[certificates.card,
+                    {
+                         width: width < 700 ? "100%" : "31%",
+                    }
+                ]}>
                     <Text style={certificates.title}>3rd Runner-Up – Debugging</Text>
 
                     <Pressable
@@ -62,7 +71,11 @@ export default function Certificates(){
 
 
 
-                <View style={certificates.card}>
+                <View style={[certificates.card,
+                    {
+                        width: width < 700 ? "100%" : "31%",
+                    }
+                ]}>
                     <Text style={certificates.title}>Python Bootcamp Mentor - PHINMA UI</Text>
 
                     <Pressable
@@ -86,7 +99,11 @@ export default function Certificates(){
                 </View>
 
 
-                <View style={certificates.card}>
+                <View style={[certificates.card,
+                    {
+                     width: width < 700 ? "100%" : "31%",
+                    }
+                ]}>
                     <Text style={certificates.title}>Top 2 Best Website Design</Text>
 
                     <Pressable
@@ -110,7 +127,11 @@ export default function Certificates(){
 
 
 
-                <View style={certificates.card}>
+                <View style={[certificates.card,
+                    {
+                        width: width < 700 ? "100%" : "31%",
+                    }
+                ]}>
                     <Text style={certificates.title}>Certificate of Completion</Text>
                     <Pressable
                     style={({hovered}) =>[

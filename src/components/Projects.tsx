@@ -1,8 +1,9 @@
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Image, Linking, Pressable, Text, TouchableOpacity, View } from "react-native";
+import { Image, Linking, Pressable, Text, TouchableOpacity, useWindowDimensions, View } from "react-native";
 import project from "../styles/project";
 
 export default function Projects() {
+  const {width} = useWindowDimensions();
   return (
   <View style={project.header}>
       <Text style={project.header}>Projects</Text>
@@ -10,7 +11,13 @@ export default function Projects() {
     <View style={project.container}>
       {/* PROJECT 1 */}
       
-      <View style={project.card}>
+      <View style={[project.card,
+        {
+          width: width < 768 ? "100%" : "31%",
+        },
+        
+      ]}
+      >
         <Text style={project.title}>TuitionQueueTrack</Text>
 
 
@@ -88,7 +95,11 @@ export default function Projects() {
 
       {/* PROJECT 2 */}
       
-      <View style={project.card}>
+      <View style={[project.card,
+        {
+          width: width < 768 ? "100%" : "31%",
+        }
+      ]}>
 
         <Text style={project.title}>Campus Event & Activity Appointment System</Text>
 
@@ -161,7 +172,11 @@ export default function Projects() {
       </View>
 
       {/* PROJECT 3 */}
-      <View style={project.card}>
+      <View style={[project.card,
+        {
+          width: width < 768 ? "100%" : "31%",
+        }
+      ]}>
 
              
           <Text style={project.title}>

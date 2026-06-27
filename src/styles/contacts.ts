@@ -10,13 +10,13 @@ export default StyleSheet.create({
         fontWeight: "bold",
         color: "#4F46E5",
         textAlign: "center",
-        padding: 30
+        padding: 10
     },
     row:{
         flexDirection: "row",
         flexWrap: "wrap",
         padding: 30,
-        gap: 40,
+        gap: 20,
         alignSelf: "center",
   
         

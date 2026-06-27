@@ -16,7 +16,7 @@ export default StyleSheet.create({
     flexWrap: "wrap",
     padding: 20,
     
-    gap: 1, // okay lang sa newer RN, pero kung error alisin mo
+    gap: 10, // okay lang sa newer RN, pero kung error alisin mo
     backgroundColor: "white",
     bottom: 100,
     justifyContent: "space-between",
