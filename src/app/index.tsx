@@ -24,6 +24,8 @@ export default function Home() {
             IT Student • Web Development • Embedded Systems Enthusiast
           </Text>
 
+
+          <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button}>
             <View style={styles.icon}>
               <MaterialCommunityIcons
@@ -45,6 +47,7 @@ export default function Home() {
               <Text style={styles.box}>Contact Me</Text>
             </View>
           </TouchableOpacity>
+          </View>
 
           <Text style={about.aboutme}>
             About Me
@@ -61,9 +64,11 @@ export default function Home() {
           <Certificates />
           <Contacts />
 
+       
         </View>
 
       </ScrollView>
     </View>
+    
   );
 }

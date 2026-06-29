@@ -4,7 +4,7 @@ export default StyleSheet.create({
   container:{
 
   flexDirection: "row",
-  gap: 20,
+ 
   flexWrap: "wrap",
   justifyContent: "center",
   alignItems: "flex-start"
@@ -25,7 +25,8 @@ export default StyleSheet.create({
   section: {
     marginBottom: 80,
     padding: 10,
-    minWidth: 250
+    minWidth: 250,
+    margin: 10
 
     
     

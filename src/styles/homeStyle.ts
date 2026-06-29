@@ -24,7 +24,7 @@ export default StyleSheet.create({
     fontWeight: "bold",
     color: "#111111",
     textAlign: "center",
-    left: 15
+   
   },
 
   role: {
@@ -46,13 +46,12 @@ export default StyleSheet.create({
   button: {
     backgroundColor: "#4F46E5",
     paddingVertical: 12,
-    paddingHorizontal: 15,
+    paddingHorizontal: 20,
     borderRadius: 12,
 
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    marginRight: 200,
     marginTop: 5,
   },
 
@@ -63,6 +62,16 @@ export default StyleSheet.create({
   },
 
 
+  buttonContainer:{
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 20,
+    flexWrap: "wrap",
+    marginTop: 20
+
+  },
+
   contactButton: {
     backgroundColor: "#4F46E5",
     paddingVertical: 12,
@@ -72,9 +81,7 @@ export default StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    marginLeft: 200,
     marginTop: 10,
-    bottom: 58
     
   },
 
