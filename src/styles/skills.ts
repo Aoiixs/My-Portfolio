@@ -24,9 +24,8 @@ export default StyleSheet.create({
 
   section: {
     marginBottom: 80,
-    padding: 10,
-    minWidth: 250,
-    margin: 10
+    padding: 40,
+
 
     
     
