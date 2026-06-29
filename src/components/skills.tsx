@@ -6,11 +6,11 @@ import { Pressable, Text, useWindowDimensions, View } from "react-native";
 
 export default function Skills() {
     const {width} = useWindowDimensions();
-    const sectionWidth = width < 700  ? "100%"  : width <1100 ? "48%"  : "23%";
+    const sectionWidth = width < 700  ? "100%"  : width <1100 ? "48%"  : "24%";
     return(
 
         <>
-    <Text style = {skills.header}>Skills</Text>
+    <Text style = {skills.header}>Skills v2</Text>
        <View style={skills.container}>
         
         {/* FRONTEND */}

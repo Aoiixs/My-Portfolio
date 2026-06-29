@@ -2,9 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   container:{
-
   flexDirection: "row",
- 
   flexWrap: "wrap",
   justifyContent: "center",
   alignItems: "flex-start"
@@ -17,15 +15,16 @@ export default StyleSheet.create({
     fontWeight: "bold",
     color: "#4F46E5",
     marginBottom: 40,
-    textAlign: "center"
+    alignContent: "center",
+    
 
     
   },
 
   section: {
-    marginBottom: 80,
-    padding: 40,
-
+    marginBottom: 60,
+    padding: 10,
+    alignItems: "center"
 
     
     
@@ -55,13 +54,13 @@ export default StyleSheet.create({
   item: {
   fontSize: 15,
   color: "#1f1c1c",
-  paddingVertical: 8,
-  paddingHorizontal: 20,
+  paddingVertical: 12,
+  paddingHorizontal: 16,
   backgroundColor: "#F3F4F6",
   borderRadius: 15,
   textAlign: "center",
-  padding: 15,
-
+  maxWidth: 260,
+  width: "100%"
 
   },
   itemHover:{
