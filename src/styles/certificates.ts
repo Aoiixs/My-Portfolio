@@ -6,19 +6,16 @@ export default StyleSheet.create({
         fontSize: 35,
         color: "#4F46E5",
         fontWeight: "bold",
-        marginBottom: 10,
         textAlign: "center",
-        lineHeight: 250
+        marginTop: 50
     },
 
     container:{
-    flex: 1,
     flexWrap: "wrap",
     padding: 20,
     
     gap: 10, // okay lang sa newer RN, pero kung error alisin mo
     backgroundColor: "white",
-    bottom: 100,
     justifyContent: "space-between",
     flexDirection: "row"
     },
@@ -42,7 +39,6 @@ export default StyleSheet.create({
         borderRadius: 16,
         justifyContent: "center",
         alignItems: "center",
-        maxHeight: 450,    
         
         
 
