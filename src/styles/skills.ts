@@ -2,10 +2,11 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   container:{
+
   flexDirection: "row",
+  gap: 20,
   flexWrap: "wrap",
-  justifyContent: "center",
-  alignItems: "flex-start"
+  justifyContent: "space-around"
   
   
   },
@@ -22,10 +23,8 @@ export default StyleSheet.create({
   },
 
   section: {
-    marginBottom: 60,
+    marginBottom: 80,
     padding: 10,
-    alignItems: "center",
-    maxWidth: 250
 
     
     
@@ -55,13 +54,13 @@ export default StyleSheet.create({
   item: {
   fontSize: 15,
   color: "#1f1c1c",
-  paddingVertical: 12,
-  paddingHorizontal: 16,
+  paddingVertical: 8,
+  paddingHorizontal: 20,
   backgroundColor: "#F3F4F6",
   borderRadius: 15,
   textAlign: "center",
-  maxWidth: 260,
-  width: "100%"
+  padding: 15,
+
 
   },
   itemHover:{
