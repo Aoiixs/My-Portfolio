@@ -6,7 +6,8 @@ export default StyleSheet.create({
   flexDirection: "row",
   gap: 20,
   flexWrap: "wrap",
-  justifyContent: "space-around"
+  justifyContent: "center",
+  alignItems: "flex-start"
   
   
   },
@@ -16,8 +17,7 @@ export default StyleSheet.create({
     fontWeight: "bold",
     color: "#4F46E5",
     marginBottom: 40,
-    alignContent: "center",
-    
+    textAlign: "center"
 
     
   },
@@ -25,6 +25,7 @@ export default StyleSheet.create({
   section: {
     marginBottom: 80,
     padding: 10,
+    minWidth: 250
 
     
     

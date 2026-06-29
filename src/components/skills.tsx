@@ -6,7 +6,7 @@ import { Pressable, Text, useWindowDimensions, View } from "react-native";
 
 export default function Skills() {
     const {width} = useWindowDimensions();
-    const sectionWidth = width < 900? 350 : "23%";
+    const sectionWidth = width < 700  ? "100%"  : width <1100 ? "48%"  : "23%";
     return(
 
         <>
