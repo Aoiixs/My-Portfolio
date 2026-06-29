@@ -24,7 +24,8 @@ export default StyleSheet.create({
   section: {
     marginBottom: 60,
     padding: 10,
-    alignItems: "center"
+    alignItems: "center",
+    maxWidth: 250
 
     
     
