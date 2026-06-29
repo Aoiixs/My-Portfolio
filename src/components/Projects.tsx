@@ -13,7 +13,7 @@ export default function Projects() {
       
       <View style={[project.card,
         {
-          width: width < 768 ? "100%" : "31%",
+          width: width < 900 ? "100%" : "31%",
         },
         
       ]}
